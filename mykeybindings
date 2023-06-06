@@ -1,0 +1,18 @@
+[/]
+looking-glass-keybinding=@as []
+
+[media-keys]
+screensaver=['XF86ScreenSaver', '<Primary><Alt>Return']
+terminal=['<Primary><Alt>t', '<Super>Return']
+
+[wm]
+close=['<Alt>F4', '<Super>q']
+maximize=['<Super>m']
+minimize=['<Super>ccedilla']
+push-tile-down=['<Super>Down', '<Super>j']
+push-tile-left=['<Super>Left', '<Super>h']
+push-tile-right=['<Super>Right', '<Super>l']
+push-tile-up=['<Super>Up', '<Super>k']
+switch-to-workspace-left=['<Control><Alt>Left', '<Primary><Alt>h']
+switch-to-workspace-right=['<Control><Alt>Right', '<Primary><Alt>l']
+unmaximize=['<Alt>F5', '<Super>odiaeresis']
