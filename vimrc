@@ -17,6 +17,7 @@ call plug#begin()
   Plug 'preservim/nerdtree'
 call plug#end()
 
+set term=screen-256color
 
 
 
