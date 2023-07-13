@@ -127,3 +127,18 @@ alias kanban='cd Desktop/genel/my-personal-kanban/ && firefox index.html'
 ### fzf ile dosyanın bulundugu directorye direkt gitme
 alias fd='cd "$(dirname "$(fzf)")"'
 alias cdh='cd ~'
+
+export TERM=screen-256color
+export EDITOR='micro'
+export VISUAL='micro'
+alias notes='cd Desktop/notlar/'
+alias cal='calcurse'
+export MICRO_TRUECOLOR=1
+export TERM="xterm-256color"
+alias tmux="tmux -2"
+alias projeler='cd Desktop/projeler/'
+alias translate='trans -t tr'
+### fzf ile dosyanın bulundugu directorye direkt gitme
+alias fd='cd "$(dirname "$(fzf)")"'
+alias cdh='cd ~'
+
