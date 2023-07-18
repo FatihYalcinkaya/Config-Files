@@ -10,6 +10,6 @@
     "Alt-h": "CursorLeft",
     "Alt-k": "CursorUp",
     "Alt-l": "CursorRight",
-"Ctrl-n":"SelectLine"
+    "Ctrl-n":"SelectLine"
 
 }
