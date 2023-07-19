@@ -184,15 +184,23 @@ bar {
  		     
 }
 
+# KENDI YAPTIGIM DEGISIKLIKLER
+
 exec_always --no-startup-id compton --config /home/user/.config/compton
 exec_always --no-startup-id xfce4-power-manager 
 exec_always  --no-startup-id volumeicon
 exec --no-startup-id xfce4-clipman 
 
 
-bindsym XF86MonBrightnessUp exec xbacklight -inc 20
-bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 20
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 20
+bindsym XF86MonBrightnessUp exec brightnessctl set +20%
+bindsym XF86MonBrightnessDown exec brightnessctl set 20%-
 
+bindsym XF86AudioPlay exec playerctl play-pause
+bindsym XF86AudioPause exec playerctl play-pause
+bindsym XF86AudioNext exec playerctl next
+bindsym XF86AudioPrev exec playerctl previous
 
 # class                 border  backgr. text    indicator child_border                                                                     
 client.focused_inactive #0d1010 #212121 #d9d9d9 #0d1010 #063340                                                                            
