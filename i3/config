@@ -197,9 +197,9 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 20
 # class                 border  backgr. text    indicator child_border                                                                     
 client.focused_inactive #0d1010 #212121 #d9d9d9 #0d1010 #063340                                                                            
 client.unfocused        #0d1010 #212121 #d9d9d9 #424242 #063340                                                                            
-client.focused          #bd93f9 #bd93f9 #000000 #d9d9d9 #f54c53                                                        
+client.focused          #f54c53 #f54c53 #00000  #d9d9d9 #f54c53                                                        
 
 #Hide window title bar
-default_border pixel 1
-default_floating_border pixel 1
-for_window [class="^.*"] border pixel 1
+#default_border pixel 1
+#default_floating_border pixel 1
+#for_window [class="^.*"] border pixel 1
