@@ -180,7 +180,7 @@ bindsym Print exec xfce4-screenshooter
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-        status_command i3status
+        status_command i3status -c /home/fatih/.config/i3status/i3status.conf
  		     
 }
 
@@ -205,7 +205,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # class                 border  backgr. text    indicator child_border                                                                     
 client.focused_inactive #0d1010 #212121 #d9d9d9 #0d1010 #063340                                                                            
 client.unfocused        #0d1010 #212121 #d9d9d9 #424242 #063340                                                                            
-client.focused          #f54c53 #f54c53 #00000  #d9d9d9 #f54c53                                                        
+client.focused          #bd93f9 #bd93f9 #00000  #f8f8f2  #bd93f9                                                        
 
 #Hide window title bar
 #default_border pixel 1
