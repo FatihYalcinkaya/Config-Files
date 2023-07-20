@@ -188,7 +188,7 @@ bar {
 
 exec_always --no-startup-id compton --config /home/user/.config/compton
 exec_always --no-startup-id xfce4-power-manager 
-exec_always  --no-startup-id volumeicon
+exec  --no-startup-id volumeicon
 exec --no-startup-id xfce4-clipman 
 
 
@@ -211,3 +211,17 @@ client.focused          #bd93f9 #bd93f9 #00000  #f8f8f2  #bd93f9
 #default_border pixel 1
 #default_floating_border pixel 1
 #for_window [class="^.*"] border pixel 1
+
+
+
+
+
+
+
+
+
+
+
+
+
+
