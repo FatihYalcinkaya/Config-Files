@@ -42,7 +42,7 @@ bindsym XF86MonBrightnessDown exec brightnessctl set 5%- # decrease screen brigh
 #sudo chmod +s /usr/bin/brightnessctl
 
 #i3lock
-bindsym $mod+Shift+x exec --no-startup-id i3lock --image Pictures/digital.png
+bindsym $mod+Shift+x exec --no-startup-id i3lock --image Pictures/wallpaper.png
 
 
 # Use Mouse+$mod to drag floating windows to their wanted position
@@ -189,6 +189,7 @@ bindsym Print exec xfce4-screenshooter
 # finds out, if available)
 bar {
         status_command i3status -c /home/fatih/.config/i3status/i3status.conf
+
  		
 }
 
@@ -220,10 +221,10 @@ client.focused          #bd93f9 #bd93f9 #00000  #f8f8f2  #bd93f9
 #default_floating_border pixel 1
 #for_window [class="^.*"] border pixel 1
 
-exec nitrogen --restore &
+exec --no-startup-id  nitrogen --restore &
 
 
-
+for_window [all] title_window_icon on
 
 
 
