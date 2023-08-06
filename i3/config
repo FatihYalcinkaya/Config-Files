@@ -197,8 +197,10 @@ bar {
 exec_always --no-startup-id compton --config /home/user/.config/compton
 exec_always --no-startup-id xfce4-power-manager 
 exec  --no-startup-id volumeicon
-exec --no-startup-id xfce4-clipman 
+exec --no-startup-id xfce4-clipman
+exec --no-startup-id playerctl 
 #exec --no-startup-id picom -b
+
 
 
 bindsym XF86AudioPlay exec playerctl play-pause
@@ -218,6 +220,7 @@ client.focused          #bd93f9 #bd93f9 #00000  #f8f8f2  #bd93f9
 #default_floating_border pixel 1
 #for_window [class="^.*"] border pixel 1
 
+exec nitrogen --restore &
 
 
 
@@ -226,7 +229,7 @@ client.focused          #bd93f9 #bd93f9 #00000  #f8f8f2  #bd93f9
 
 
 
-
+# brightnessctl icin If you don't want to do the things brightnessctl suggests, could run sudo chmod +s /usr/bin/brightnessctl (or sudo chmod +s $(which brightnessctl)).
 
 
 
