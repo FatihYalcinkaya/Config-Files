@@ -200,7 +200,7 @@ exec_always --no-startup-id xfce4-power-manager
 exec  --no-startup-id volumeicon
 exec --no-startup-id xfce4-clipman
 exec --no-startup-id playerctl 
-#exec --no-startup-id picom -b
+
 
 
 
@@ -212,9 +212,9 @@ bindsym XF86AudioPrev exec playerctl previous
 
 
 # class                 border  backgr. text    indicator child_border                                                                     
-client.focused_inactive #0d1010 #212121 #d9d9d9 #0d1010 #063340                                                                            
-client.unfocused        #0d1010 #212121 #d9d9d9 #424242 #063340                                                                            
-client.focused          #bd93f9 #bd93f9 #00000  #f8f8f2  #bd93f9                                                        
+#client.focused_inactive #0d1010 #212121 #d9d9d9 #0d1010 #063340                                                                            
+#client.unfocused        #0d1010 #212121 #d9d9d9 #424242 #063340                                                                            
+#client.focused          #bd93f9 #bd93f9 #00000  #f8f8f2  #bd93f9                                                        
 
 #Hide window title bar
 #default_border pixel 1
