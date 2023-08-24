@@ -197,11 +197,11 @@ bar {
 
 exec_always --no-startup-id compton --config /home/user/.config/compton
 exec_always --no-startup-id xfce4-power-manager 
-exec  --no-startup-id volumeicon
+exec --no-startup-id volumeicon
 exec --no-startup-id xfce4-clipman
 exec --no-startup-id playerctl 
 
-
+hide_edge_borders smart
 
 
 bindsym XF86AudioPlay exec playerctl play-pause
