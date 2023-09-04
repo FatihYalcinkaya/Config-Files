@@ -195,7 +195,7 @@ bar {
 
 # KENDI YAPTIGIM DEGISIKLIKLER
 
-exec_always --no-startup-id compton --config /home/user/.config/compton
+exec_always --no-startup-id compton --config /home/fatih/.config/compton.conf
 exec_always --no-startup-id xfce4-power-manager 
 exec --no-startup-id volumeicon
 exec --no-startup-id xfce4-clipman
