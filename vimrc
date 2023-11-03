@@ -7,3 +7,4 @@ set laststatus=2
 set termguicolors
 packadd! dracula " dracula temesının indirilmiş olamsı gerek
 colorscheme dracula 
+set showcmd
