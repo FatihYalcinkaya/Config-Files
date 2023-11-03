@@ -5,4 +5,5 @@ set mouse=a
 syntax on
 set laststatus=2
 set termguicolors
-colo sublimemonokai 
+packadd! dracula " dracula temesının indirilmiş olamsı gerek
+colorscheme dracula 
