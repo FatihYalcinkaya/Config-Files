@@ -209,7 +209,10 @@ exec --no-startup-id  nitrogen --restore &
 exec --no-startup-id compton
 hide_edge_borders smart
 
-for_window [all] title_window_icon on
+for_window [all] title_window_icon on   # gapste bunu kapadım
+gaps inner 6
+gaps outer 3
+default_border pixel 2
 
 
 
