@@ -162,7 +162,7 @@ bindsym $mod+Shift+c reload
 # restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
 bindsym $mod+Shift+r restart
 # exit i3 (logs you out of your X session)
-bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+#bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
 
 # resize window (you can also use the mouse for that)
 mode "resize" {
@@ -200,23 +200,21 @@ bar {
 
 # KENDI YAPTIGIM DEGISIKLIKLER
 
+# floating modeta acılması gereken uygulamalar
+for_window[class="Gnome-calculator"] floating enable
+for_window[class="Blueman-manager"] floating enable
+for_window[class="Pavucontrol"] floating enable
 exec_always --no-startup-id xfce4-power-manager 
 exec --no-startup-id xfce4-clipman
 exec --no-startup-id playerctl 
 exec_always --no-startup-id autotiling
 exec --no-startup-id  nitrogen --restore &
-#exec --no-startup-id xfce4-clipman
 exec --no-startup-id compton
+bindsym $mod+Shift+e exec rofi -show power-menu -modi power-menu:rofi-power-menu
 hide_edge_borders smart
 
-for_window [all] title_window_icon on   # gapste bunu kapadım
-gaps inner 6
-gaps outer 3
-default_border pixel 2
-
-for_window [class="Gnome-calculator"] floating enable
-
-
-
-
+#for_window [all] title_window_icon on
+gaps inner 6 
+gaps outer 3 
+default_border pixel 3  
 
