@@ -200,6 +200,8 @@ bar {
 
 # KENDI YAPTIGIM DEGISIKLIKLER
 
+bindsym $mod+u exec sfce4-terminal -e calcurse
+
 # floating modeta acılması gereken uygulamalar
 for_window[class="Gnome-calculator"] floating enable
 for_window[class="Blueman-manager"] floating enable
