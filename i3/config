@@ -201,6 +201,7 @@ bar {
 # KENDI YAPTIGIM DEGISIKLIKLER
 
 bindsym $mod+u exec sfce4-terminal -e calcurse
+bindsym $mod+o exec --no-startup-id xfce4-terminal --drop-down
 
 # floating modeta acılması gereken uygulamalar
 for_window[class="Gnome-calculator"] floating enable
