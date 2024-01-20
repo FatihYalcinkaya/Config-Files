@@ -15,13 +15,14 @@ packadd! dracula " dracula temesının indirilmiş olamsı gerek
 colorscheme dracula 
 set showcmd
 set smartindent
-set shiftwidth=2
+set shiftwidth=4
+set expandtab
 set nocompatible
 set tabstop=4
 
 "close bracket olayları
 inoremap " ""<left>
-inoremap ' ''<left>
+inoremap " ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
@@ -38,7 +39,6 @@ call plug#begin('~/.vim/plugged')
 
 Plug 'preservim/nerdtree'
 
-
 call plug#end()
 
 " nerdtree keyboard shortcuts"
@@ -47,5 +47,7 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 " Start NERDTree and leave the cursor in it.
-autocmd VimEnter * NERDTree | wincmd p
+autocmd VimEnter * NERDTree |wincmd p
 let g:NERDTreeWinPos = "right"
+
+
