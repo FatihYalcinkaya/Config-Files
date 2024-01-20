@@ -22,7 +22,7 @@ set tabstop=4
 
 "close bracket olayları
 inoremap " ""<left>
-inoremap " ''<left>
+inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
