@@ -50,4 +50,7 @@ nnoremap <C-f> :NERDTreeFind<CR>
 autocmd VimEnter * NERDTree |wincmd p
 let g:NERDTreeWinPos = "right"
 
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+
 
