@@ -1,0 +1,17 @@
+{
+    "workbench.sideBar.location": "right",
+    "files.autoSave": "afterDelay",
+    "editor.cursorStyle": "block",
+    "editor.formatOnSave": true,
+    "editor.minimap.enabled": false,
+    "window.enableMenuBarMnemonics": false,
+    "editor.tabCompletion": "on",
+    "window.menuBarVisibility": "toggle",
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "breadcrumbs.enabled": false,
+    "editor.renderLineHighlight": "none",
+    "workbench.reduceMotion": "on",
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.overviewRulerBorder": false
+}
