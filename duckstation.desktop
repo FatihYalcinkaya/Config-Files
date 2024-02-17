@@ -1,0 +1,5 @@
+[Desktop Entry]
+Type=Application
+Name=Duckstation
+Exec=/home/fatih/AppImages/duckstation.AppImage
+Icon=/home/fatih/AppImages/icons/duckstation.png
