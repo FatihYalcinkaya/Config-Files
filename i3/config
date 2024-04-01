@@ -208,3 +208,4 @@ for_window[class="Pavucontrol"] floating enable
 for_window[class="gnome-calculator"] floating enable
 
 bindsym $mod+o exec --no-startup-id xfce4-terminal --drop-down
+bindsym $mod+p exec --no-startup-id xfce4-terminal --drop-down -e lf  #execute lf file manager on dropdown terminal
