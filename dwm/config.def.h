@@ -88,7 +88,17 @@ static const char *termcmd[]  = { "xfce4-terminal", NULL };
 static const char *upvol[] = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "+5%", NULL };
 static const char *downvol[] = { "/usr/bin/pactl", "set-sink-volume", "@DEFAULT_SINK@", "-5%", NULL };
 static const char *mutevol[] = { "/usr/bin/pactl", "set-sink-mute", "@DEFAULT_SINK@", "toggle", NULL };
+
+/* Control Media Players */
+static const char *medplaypausecmd[] = { "playerctl", "play-pause", NULL };
+static const char *mednextcmd[] = { "playerctl", "next", NULL };
+static const char *medprevcmd[] = { "playerctl", "previous", NULL };
+
 static const Key keys[] = {
+	/* Keybindings for Media play/pause/next/previous */
+    { 0, XF86XK_AudioPlay, spawn, {.v = medplaypausecmd } },
+    { 0, XF86XK_AudioNext, spawn, {.v = mednextcmd } },
+    { 0, XF86XK_AudioPrev, spawn, {.v = medprevcmd } },
 	/* modifier                     key        function        argument */
     { 0,                       XF86XK_AudioLowerVolume, spawn, {.v = downvol } },
 	{ 0,                       XF86XK_AudioMute, spawn, {.v = mutevol } },
