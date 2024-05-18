@@ -7,5 +7,6 @@ xfce4-clipman &
 xfce4-notifyd &
 slstatus &
 picom &
+nm-applet &
 nitrogen --restore &
 
