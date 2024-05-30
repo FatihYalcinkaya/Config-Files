@@ -10,3 +10,6 @@ picom &
 nm-applet &
 nitrogen --restore &
 
+
+# .local/share/dwm/autostart.sh konumuna konulacak
+
