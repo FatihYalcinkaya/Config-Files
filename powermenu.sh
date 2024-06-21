@@ -14,32 +14,21 @@ poweroff() {
 suspend() {
     systemctl suspend
 }
-
-# Kullanıcıya seçenekleri göster
-show_options() {
-    echo "1. Logout"
-    echo "2. Shutdown"
-    echo "3. Suspend"
-    echo "4. Cancel"
+reboot(){
+	systemctl reboot
 }
-
-# Kullanıcıdan seçenek iste ve ilgili işlemi gerçekleştir
-read_option() {
-    read -p "Choice " choice
-    case $choice in
-        1) logout ;;
-        2) poweroff ;;
-        3) suspend ;;
-        4) echo "Cancelled." ;;
-        *) echo "Invalid!" ;;
-    esac
+lock(){
+	dm-tool lock
 }
+# DMenu arayüzünü oluştur ve seçenekleri göster
+selected_option=$(echo -e "Logout\nShutdown\nSuspend\nReboot\nLock\nCancel" | dmenu -p "Choice:")
 
-# Ana işlev
-main() {
-    show_options
-    read_option
-}
-
-# Ana işlevi çağır
-main
+# Kullanıcının seçtiği seçeneği işle
+case $selected_option in
+    "Logout") logout ;;
+    "Shutdown") poweroff ;;
+    "Suspend") suspend ;;
+    "Reboot") reboot ;;
+    "Lock") lock;;
+    *) echo "Cancelled." ;;
+esac
