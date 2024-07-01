@@ -23,6 +23,26 @@
         "key": "alt+l",
         "command": "cursorRight",
         "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+h",
+        "command": "cursorLeftSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+j",
+        "command": "cursorDownSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+k",
+        "command": "cursorUpSelect",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+shift+l",
+        "command": "cursorRightSelect",
+        "when": "editorTextFocus"
     }
 ]
 
