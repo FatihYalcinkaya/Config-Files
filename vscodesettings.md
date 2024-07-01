@@ -43,6 +43,11 @@
         "key": "alt+shift+l",
         "command": "cursorRightSelect",
         "when": "editorTextFocus"
+    },
+      {
+        "key": "alt+shift+a",
+        "command": "cursorEnd",
+        "when": "editorTextFocus"
     }
 ]
 
