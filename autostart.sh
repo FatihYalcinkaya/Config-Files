@@ -9,6 +9,7 @@ slstatus &
 picom &
 nm-applet &
 nitrogen --restore &
+xset s off && xset -dpms  # ekranın 10 dk icinde gitmesini engeller.
 
 
 # .local/share/dwm/autostart.sh konumuna konulacak
