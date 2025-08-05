@@ -1,18 +1,27 @@
-vim.opt.number = true           -- Satır numarası
-vim.opt.relativenumber = true   -- Relative satır numarası
-vim.opt.tabstop = 4             -- Bir tab karakteri 4 boşluk
-vim.opt.shiftwidth = 4          -- Otomatik girintilemede 4 boşluk
-vim.opt.expandtab = true        -- Tab yerine boşluk kullan
-vim.cmd("colorscheme slate")    -- Colorscheme
-vim.cmd("syntax on")            -- Syntax
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.tabstop = 4
+vim.opt.shiftwidth = 4
+vim.opt.expandtab = true
+vim.cmd("colorscheme sorbet")
+vim.cmd("syntax enable")
+vim.opt.termguicolors = true
 
--- Otomatik parantez ve tırnak tamamlama 
 vim.api.nvim_set_keymap('i', '(', '()<Left>', { noremap = true })
 vim.api.nvim_set_keymap('i', '[', '[]<Left>', { noremap = true })
 vim.api.nvim_set_keymap('i', '{', '{}<Left>', { noremap = true })
 vim.api.nvim_set_keymap('i', '"', '""<Left>', { noremap = true })
 vim.api.nvim_set_keymap('i', "'", "''<Left>", { noremap = true })
 vim.api.nvim_set_keymap('i', '`', '``<Left>', { noremap = true })
--- jj yi insert mode yapma
+
 vim.keymap.set("i", "jj", "<Esc>", { noremap = true, silent = true })
 
+vim.opt.swapfile = false
+vim.opt.backup = false
+vim.opt.writebackup = false
+vim.opt.undofile = true
+
+vim.opt.laststatus = 3
+vim.opt.wrap = true
+vim.opt.linebreak = true
+vim.opt.mouse = "a"
