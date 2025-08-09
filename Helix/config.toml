@@ -1,4 +1,4 @@
-theme = "doom-one"
+theme = "jetbrains_dark"
 
 [editor]
 line-number = "relative"
